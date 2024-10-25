@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cela importe le fichier CSS -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Cela importe Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Titre de l'onglet -->
+
+    <title>Harmonie des Sons</title>
+  </head>
+  <body>
+    <!-- La navigation -->
+    <div class="background">
+
+    <header>
+      <nav>
+        <h2 class="title-navbar">Harmonie des Sons</h2>
+        <ul>
+          <li>
+            <a href="#">Accueil</a>
+            <a href="#">Festival</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Le titre principal et le sous-titre -->
+    <main>
+      <section class="title spacing bebas-neue-regular">
+        <h1>Harmonie des Sons</h1>
+        <h3>Festival de Musique</h3>
+        <hr />
+      </section>
+      
+
+      <!-- Section vidéo avec une vidéo importé -->
+      <section class="video-container">
+        <h1 class="center">Le meilleur festival du monde</h1>
+        <div class="spacing"></div>
+        <video controls poster="/img/poster.png">
+          <source src="videos/festival.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la balise vidé o.
+        </video>
+      </section>
+
+      <!-- Pour espacer les blocs de 20px avec une ligne ajouté -->
+      <div class="hr-spacing"></div>
+
+      <!-- Section audio avec un audio importé -->
+      <section class="audio-container">
+        <h1 class="center">Notre dernière chanson</h1>
+        <div class="spacing"></div>
+        <audio controls>
+          <source src="music/audio.mp3" type="audio/mpeg" />
+          Votre navigateur ne supporte pas la balise audi o.
+        </audio>
+      </section>
+
+      <!-- Pour espacer les blocs de 20px avec une ligne ajouté -->
+
+      <div class="hr-spacing"></div>
+
+      <!-- Section maps avec une carte Google Maps importé -->
+
+      <section class="maps-container">
+        <h1 class="center">On est ici!</h1>
+        <div class="spacing"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.9120345948836!2d4.380805390063053!3d51.09163089880832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3ef0077f66e81%3A0x8d79404e88297021!2sTomorrowland%20Belgium!5e0!3m2!1sfr!2sfr!4v1729845538595!5m2!1sfr!2sfr"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <!-- Pour espacer les blocs de 50px avec une ligne ajouté -->
+
+      <div class="hr-spacing"></div>
+      <div class="spacing"></div>
+
+      <!-- Section formulaire avec un formulaire et un bouton "Envoyer" -->
+
+      <section class="contact-container">
+        <div class="formulaire">
+          <h1><u>Contactez-nous</u></h1>
+          <form action="#" method="post">
+            <label id="name">Nom & Prénom</label>
+            <input type="text" placeholder="&nbsp;&nbsp;Nom Prénom" />
+
+            <label id="email">Email</label>
+            <input type="email" placeholder="&nbsp;&nbsp;Email" />
+
+            <label id="subject">Sujet</label>
+            <select name="pets" id="pet-select">
+              <option value="">Choissiez votre sujet</option>
+              <option value="dog">1er</option>
+              <option value="cat">2ème</option>
+              <option value="hamster">3ème</option>
+              <option value="parrot">4ème</option>
+              <option value="spider">5ème</option>
+              <option value="goldfish">6ème</option>
+            </select>
+
+            <label id="message">Message</label>
+            <textarea
+              name="message"
+              placeholder="&nbsp;&nbsp;Ecrivez votre message..."
+            ></textarea>
+
+            <button type="submit" name="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pour espacer les blocs de 30px -->
+
+    <div class="spacing"></div>
+
+    <!-- Footer -->
+
+    <footer>
+      <h3>© 2024 - Harmonie des Sons</h3>
+    </footer>
+  </body>
+</html>
